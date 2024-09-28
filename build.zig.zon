@@ -1,5 +1,5 @@
 .{
-    .name = "zig-basisu",
+    .name = "zig_basisu",
     .version = "0.0.0",
     .paths = .{
         "src",

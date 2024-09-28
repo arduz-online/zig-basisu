@@ -6,7 +6,7 @@ pub fn build(b: *Build) void {
     const target = b.standardTargetOptions(.{});
 
     const lib = b.addStaticLibrary(.{
-        .name = "mach-basisu",
+        .name = "zig-basisu",
         .target = target,
         .optimize = optimize,
     });
@@ -21,7 +21,7 @@ pub fn build(b: *Build) void {
     }).artifact("basisu"));
     b.installArtifact(lib);
 
-    const module = b.addModule("mach-basisu", .{
+    const module = b.addModule("zig-basisu", .{
         .root_source_file = b.path("src/main.zig"),
     });
     module.linkLibrary(lib);
