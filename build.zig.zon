@@ -1,5 +1,5 @@
 .{
-    .name = "mach-basisu",
+    .name = "zig-basisu",
     .version = "0.0.0",
     .paths = .{
         "src",
@@ -12,8 +12,8 @@
     },
     .dependencies = .{
         .basisu = .{
-            .url = "https://pkg.machengine.org/basisu/9955d030f37102b60d016fa4118ccb7f3a0e2f54.tar.gz",
-            .hash = "1220da74ddbae5ccae5d0141e747023039488f266b98e7ceb860015f95b2dd10c650",
+            .url = "git+https://github.com/arduz-online/basisu.git#6b4cd542c708e47bf4b6a1913b9149f4252c241b",
+            .hash = "1220b48df4e3856626990e92214e3e4bceae61d345c632c3c909785b8f2cabc2dc63",
         },
     },
 }

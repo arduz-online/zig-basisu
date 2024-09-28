@@ -22,12 +22,12 @@ pub fn build(b: *Build) void {
     b.installArtifact(lib);
 
     const module = b.addModule("mach-basisu", .{
-        .root_source_file = .{ .path = "src/main.zig" },
+        .root_source_file = b.path("src/main.zig"),
     });
     module.linkLibrary(lib);
 
     const test_exe = b.addTest(.{
-        .root_source_file = .{ .path = "src/main.zig" },
+        .root_source_file = b.path("src/main.zig"),
         .target = target,
         .optimize = optimize,
     });
