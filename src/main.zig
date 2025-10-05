@@ -30,7 +30,7 @@ test "encode/transcode" {
     defer params.deinit();
 
     const image = params.getImageSource(0);
-    image.fill(@embedFile("ziggy.png"), 379, 316, 4);
+    image.fill(@embedFile("ziggy.png"), 16, 16, 4);
 
     const comp = try Compressor.init(params);
     try comp.process();

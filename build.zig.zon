@@ -1,6 +1,7 @@
 .{
-    .name = "zig_basisu",
+    .name = .zig_basisu,
     .version = "0.0.0",
+    .fingerprint = 0x60ddad38b41c19f,
     .paths = .{
         "src",
         "build.zig",
@@ -12,8 +13,7 @@
     },
     .dependencies = .{
         .basisu = .{
-            .url = "git+https://github.com/arduz-online/basisu.git#6b4cd542c708e47bf4b6a1913b9149f4252c241b",
-            .hash = "1220b48df4e3856626990e92214e3e4bceae61d345c632c3c909785b8f2cabc2dc63",
+            .path = "libs",
         },
     },
 }
